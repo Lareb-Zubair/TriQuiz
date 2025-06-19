@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Option selection handler
+
   document.querySelectorAll('.question ul li').forEach(option => {
     option.addEventListener('click', function () {
       const siblings = this.parentElement.querySelectorAll('li');
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scoreContainer.classList.remove('show');
     scoreContainer.style.display = 'none';
 
-    // Reset all sets and only show the first one
+    
     questionSets.forEach((set, i) => {
       set.style.display = i === 0 ? 'block' : 'none';
       set.classList.toggle('active', i === 0);
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById("progress-bar");
     progressBar.style.width = "0%";
 
-    // Optional: scroll to top when quiz restarts
+    
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
