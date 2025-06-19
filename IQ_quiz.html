@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>IQ Quiz</title>
+    <link rel="stylesheet" href="IQ_quiz.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+
+<body>
+    <header>
+        <a href="homepage.html" class="home-button">Home</a> 
+        <h1>IQ</h1>
+        <img src="iq.jpg" alt="IQ Image" class="iq" />
+    </header>
+
+    <main>
+        <form id="quizForm">
+           <div class="question-set" id="set1">
+        <div class="question" data-question-id="q1">
+          <p>1. 70% of 50 people are male. How many males?</p>
+          <ul>
+            <li data-option="25">25</li>
+            <li data-option="35">35</li>
+            <li data-option="45">45</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q2">
+          <p>2. 5 machines make 5 widgets in 5 minutes. How long for 100 machines to make 100 widgets?</p>
+          <ul>
+            <li data-option="5 minutes">5 minutes</li>
+            <li data-option="10 minutes">10 minutes</li>
+            <li data-option="20 minutes">20 minutes</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q3">
+          <p>3. Who couldn't finish last: Sarah ahead of John, John ahead of Alex?</p>
+          <ul>
+            <li data-option="John">John</li>
+            <li data-option="Alex">Alex</li>
+            <li data-option="Sarah">Sarah</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="question-set" id="set2">
+        <div class="question" data-question-id="q4">
+          <p>4. Next number in: 2, 6, 12, 20, 30, ___?</p>
+          <ul>
+            <li data-option="40">40</li>
+            <li data-option="42">42</li>
+            <li data-option="36">36</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q5">
+          <p>5. Man 4x age of daughter. In 20 years, he’ll be twice her age. Ages now?</p>
+          <ul>
+            <li data-option="60 and 15">60 and 15</li>
+            <li data-option="40 and 10">40 and 10</li>
+            <li data-option="24 and 6">24 and 6</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q6">
+          <p>6. J, F, M, A, M, __, __?</p>
+          <ul>
+            <li data-option="J, J">J, J</li>
+            <li data-option="J, M">J, M</li>
+            <li data-option="J, A">J, A</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="question-set" id="set3">
+        <div class="question" data-question-id="q7">
+          <p>7. Squares in 4x4 grid?</p>
+          <ul>
+            <li data-option="30">30</li>
+            <li data-option="16">16</li>
+            <li data-option="36">36</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q8">
+          <p>8. Plane crashes on US-Canada border. Where bury survivors?</p>
+          <ul>
+            <li data-option="The U.S.">The U.S.</li>
+            <li data-option="Canada">Canada</li>
+            <li data-option="Nowhere">Nowhere</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q9">
+          <p>9. 40 students, 22 girls. % boys?</p>
+          <ul>
+            <li data-option="45%">45%</li>
+            <li data-option="55%">55%</li>
+            <li data-option="50%">50%</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="question-set" id="set4">
+        <div class="question" data-question-id="q10">
+          <p>10. 7 cats catch 7 mice in 7 mins. How many for 1 cat in 1 min?</p>
+          <ul>
+            <li data-option="1">1</li>
+            <li data-option="7">7</li>
+            <li data-option="0.5">0.5</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q11">
+          <p>11. Interior angle degrees in hexagon?</p>
+          <ul>
+            <li data-option="720 degrees">720 degrees</li>
+            <li data-option="360 degrees">360 degrees</li>
+            <li data-option="540 degrees">540 degrees</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q12">
+          <p>12. Polygon with 1800° sum. How many sides?</p>
+          <ul>
+            <li data-option="12">12</li>
+            <li data-option="10">10</li>
+            <li data-option="8">8</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="question-set" id="set5">
+        <div class="question" data-question-id="q13">
+          <p>13. Angle between hands at 3:15?</p>
+          <ul>
+            <li data-option="37.5 degrees">37.5 degrees</li>
+            <li data-option="45 degrees">45 degrees</li>
+            <li data-option="60 degrees">60 degrees</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q14">
+          <p>14. Series: +5 then -3 from 10. 5th number?</p>
+          <ul>
+            <li data-option="14">14</li>
+            <li data-option="12">12</li>
+            <li data-option="11">11</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q15">
+          <p>15. 300 pages, 15/day. Days to finish?</p>
+          <ul>
+            <li data-option="20 days">20 days</li>
+            <li data-option="15 days">15 days</li>
+            <li data-option="25 days">25 days</li>
+          </ul>
+        </div>
+      </div>
+
+            <div class="navigation">
+                <button type="button" id="prevBtn">Previous</button>
+                <button type="button" id="nextBtn">Next</button>
+                <button type="submit" id="submitBtn" style="display: none;">Submit</button>
+            </div>
+        </form>
+
+        <div id="score-container" style="display: none;">
+      <h2>Your Total Score: <span id="final-score">0</span> / <span id="total-questions-display">15</span></h2>
+
+    
+      <div id="progress-bar-wrapper">
+        <div id="progress-bar"></div>
+      </div>
+
+      <p id="score-message"></p>
+      <button class="button" id="restart-quiz">Retake Quiz</button>
+    </div>
+  </main>
+    <script src="IQ quiz.js"></script>
+</body>
+</html>

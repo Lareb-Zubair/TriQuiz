@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>History Quiz</title>
+  <link rel="stylesheet" href="pak history_quiz.css" />
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+<body>
+
+  <header>
+    <a href="homepage.html" class="home-button">Home</a>
+    <h1>History Quiz</h1>
+    <img src="history.jpg" alt="History Banner" class="history" />
+  </header>
+
+  <main>
+    <form id="quizForm">
+
+      <!-- Question Set 1 -->
+      <div class="question-set" id="set1">
+        <div class="question" data-question-id="q1">
+          <p>1. Who was the first President of Pakistan?</p>
+          <ul>
+            <li data-option="Iskander Mirza">Iskander Mirza</li>
+            <li data-option="Ayub Khan">Ayub Khan</li>
+            <li data-option="Liaquat Ali Khan">Liaquat Ali Khan</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q2">
+          <p>2. When did Pakistan become independent?</p>
+          <ul>
+            <li data-option="14 August 1947">14 August 1947</li>
+            <li data-option="23 March 1940">23 March 1940</li>
+            <li data-option="14 August 1956">14 August 1956</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q3">
+          <p>3. What is the capital of Pakistan?</p>
+          <ul>
+            <li data-option="Karachi">Karachi</li>
+            <li data-option="Lahore">Lahore</li>
+            <li data-option="Islamabad">Islamabad</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q4">
+          <p>4. Who was the founder of Pakistan?</p>
+          <ul>
+            <li data-option="Allama Iqbal">Allama Iqbal</li>
+            <li data-option="Liaquat Ali Khan">Liaquat Ali Khan</li>
+            <li data-option="Quaid-e-Azam">Quaid-e-Azam</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q5">
+          <p>5. What is the national language of Pakistan?</p>
+          <ul>
+            <li data-option="Urdu">Urdu</li>
+            <li data-option="Punjabi">Punjabi</li>
+            <li data-option="English">English</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Question Set 2 -->
+      <div class="question-set" id="set2">
+        <div class="question" data-question-id="q6">
+          <p>6. Who wrote the national anthem of Pakistan?</p>
+          <ul>
+            <li data-option="Hafeez Jullundhri">Hafeez Jullundhri</li>
+            <li data-option="Faiz Ahmed Faiz">Faiz Ahmed Faiz</li>
+            <li data-option="Ahmad Faraz">Ahmad Faraz</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q7">
+          <p>7. When was the first constitution of Pakistan implemented?</p>
+          <ul>
+            <li data-option="1956">1956</li>
+            <li data-option="1962">1962</li>
+            <li data-option="1973">1973</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q8">
+          <p>8. Which mountain is the highest in Pakistan?</p>
+          <ul>
+            <li data-option="K2">K2</li>
+            <li data-option="Nanga Parbat">Nanga Parbat</li>
+            <li data-option="Tirich Mir">Tirich Mir</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q9">
+          <p>9. In which year did Pakistan become a nuclear power?</p>
+          <ul>
+            <li data-option="1998">1998</li>
+            <li data-option="2001">2001</li>
+            <li data-option="1990">1990</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q10">
+          <p>10. Who was Pakistan's first female Prime Minister?</p>
+          <ul>
+            <li data-option="Fatima Jinnah">Fatima Jinnah</li>
+            <li data-option="Benazir Bhutto">Benazir Bhutto</li>
+            <li data-option="Hina Rabbani Khar">Hina Rabbani Khar</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Question Set 3 -->
+      <div class="question-set" id="set3">
+        <div class="question" data-question-id="q11">
+          <p>11. Which river is the longest in Pakistan?</p>
+          <ul>
+            <li data-option="Ravi">Ravi</li>
+            <li data-option="Chenab">Chenab</li>
+            <li data-option="Indus">Indus</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q12">
+          <p>12. What is the currency of Pakistan?</p>
+          <ul>
+            <li data-option="Rupee">Rupee</li>
+            <li data-option="Taka">Taka</li>
+            <li data-option="Dinar">Dinar</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q13">
+          <p>13. What is the national game of Pakistan?</p>
+          <ul>
+            <li data-option="Cricket">Cricket</li>
+            <li data-option="Hockey">Hockey</li>
+            <li data-option="Football">Football</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q14">
+          <p>14. Which city is known as the City of Lights?</p>
+          <ul>
+            <li data-option="Lahore">Lahore</li>
+            <li data-option="Karachi">Karachi</li>
+            <li data-option="Islamabad">Islamabad</li>
+          </ul>
+        </div>
+        <div class="question" data-question-id="q15">
+          <p>15. Who gave the title of Quaid-e-Azam to Muhammad Ali Jinnah?</p>
+          <ul>
+            <li data-option="Maulana Shaukat Ali">Maulana Shaukat Ali</li>
+            <li data-option="Gandhi">Gandhi</li>
+            <li data-option="Mian Ferozuddin">Mian Ferozuddin</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button type="button" id="prevBtn">Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+        <button type="submit" id="submitBtn" style="display: none;">Submit</button>
+      </div>
+
+    </form>
+
+
+    <div id="score-container" style="display: none;">
+      <h2>Your Total Score: <span id="final-score">0</span> / <span id="total-questions-display">15</span></h2>
+
+    
+      <div id="progress-bar-wrapper">
+        <div id="progress-bar"></div>
+      </div>
+
+      <p id="score-message"></p>
+      <button class="button" id="restart-quiz">Retake Quiz</button>
+    </div>
+  </main>
+
+  <script src="pak quiz.js"></script>
+</body>
+</html>

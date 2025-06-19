@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Quiz</title>
+    <link rel="stylesheet" href="english_quiz.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+<body>
+    <header>
+        <h1>English Language Quiz</h1>
+        <img src="english.jpg" alt="English Quiz" class="english"/>
+        <a href="homepage.html" class="home-button">Home</a> 
+    </header>
+
+    <main>
+        <form id="quizForm">
+            <div class="question-set" id="set1" >
+  <div class="question" data-question-id="q1">
+    <p>1. What is the synonym of "Abundant"?</p>
+    <ul>
+      <li data-option="Scarce">Scarce</li>
+      <li data-option="Plentiful">Plentiful</li>
+      <li data-option="Sparse">Sparse</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q2">
+    <p>2. Choose the correct spelling:</p>
+    <ul>
+      <li data-option="Recieve">Recieve</li>
+      <li data-option="Receive">Receive</li>
+      <li data-option="Receeve">Receeve</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q3">
+    <p>3. What is the antonym of "Generous"?</p>
+    <ul>
+      <li data-option="Mean">Mean</li>
+      <li data-option="Selfless">Selfless</li>
+      <li data-option="Benevolent">Benevolent</li>
+    </ul>
+  </div>
+</div>
+
+<div class="question-set" id="set2">
+  <div class="question" data-question-id="q4">
+    <p>4. Complete the sentence: She has been working here _____ five years.</p>
+    <ul>
+      <li data-option="since">since</li>
+      <li data-option="for">for</li>
+      <li data-option="during">during</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q5">
+    <p>5. Identify the correct sentence:</p>
+    <ul>
+      <li data-option="She don't like chocolate.">She don't like chocolate.</li>
+      <li data-option="She doesn't like chocolate.">She doesn't like chocolate.</li>
+      <li data-option="She isn't like chocolate.">She isn't like chocolate.</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q6">
+    <p>6. Which of the following is a past perfect tense sentence?</p>
+    <ul>
+      <li data-option="I had finished my homework before the game.">I had finished my homework before the game.</li>
+      <li data-option="I will finish my homework after dinner.">I will finish my homework after dinner.</li>
+      <li data-option="I finish my homework every day.">I finish my homework every day.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="question-set" id="set3">
+  <div class="question" data-question-id="q7">
+    <p>7. What is the antonym of "Bold"?</p>
+    <ul>
+      <li data-option="Timid">Timid</li>
+      <li data-option="Brave">Brave</li>
+      <li data-option="Adventurous">Adventurous</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q8">
+    <p>8. Choose the correct sentence:</p>
+    <ul>
+      <li data-option="I seen him yesterday.">I seen him yesterday.</li>
+      <li data-option="I saw him yesterday.">I saw him yesterday.</li>
+      <li data-option="I am see him yesterday.">I am see him yesterday.</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q9">
+    <p>9. Which word is the verb in this sentence: "The dog barked loudly"?</p>
+    <ul>
+      <li data-option="Dog">Dog</li>
+      <li data-option="Barked">Barked</li>
+      <li data-option="Loudly">Loudly</li>
+    </ul>
+  </div>
+</div>
+
+<div class="question-set" id="set4">
+  <div class="question" data-question-id="q10">
+    <p>10. What is the synonym of "Eager"?</p>
+    <ul>
+      <li data-option="Reluctant">Reluctant</li>
+      <li data-option="Enthusiastic">Enthusiastic</li>
+      <li data-option="Lazy">Lazy</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q11">
+    <p>11. Which of the following is an adverb?</p>
+    <ul>
+      <li data-option="Quickly">Quickly</li>
+      <li data-option="Fast">Fast</li>
+      <li data-option="Runner">Runner</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q12">
+    <p>12. Complete the sentence: "The cat is _____ the table."</p>
+    <ul>
+      <li data-option="on">on</li>
+      <li data-option="of">of</li>
+      <li data-option="in">in</li>
+    </ul>
+  </div>
+</div>
+
+<div class="question-set" id="set5">
+  <div class="question" data-question-id="q13">
+    <p>13. Which word is a conjunction in this sentence: "She likes both apples and oranges"?</p>
+    <ul>
+      <li data-option="Both">Both</li>
+      <li data-option="Apples">Apples</li>
+      <li data-option="And">And</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q14">
+    <p>14. Choose the correct sentence:</p>
+    <ul>
+      <li data-option="She walks to school every day.">She walks to school every day.</li>
+      <li data-option="She walking to school every day.">She walking to school every day.</li>
+      <li data-option="She is walked to school every day.">She is walked to school every day.</li>
+    </ul>
+  </div>
+
+  <div class="question" data-question-id="q15">
+    <p>15. What is the plural form of "Child"?</p>
+    <ul>
+      <li data-option="Childs">Childs</li>
+      <li data-option="Children">Children</li>
+      <li data-option="Childrens">Childrens</li>
+    </ul>
+  </div>
+</div>
+            <div class="navigation">
+                <button type="button" id="prevBtn">Previous</button>
+                <button type="button" id="nextBtn">Next</button>
+                <button type="submit" id="submitBtn" style="display: none;">Submit</button>
+            </div>
+        </form>
+
+        <div id="score-container" style="display: none;">
+      <h2>Your Total Score: <span id="final-score">0</span> / <span id="total-questions-display">15</span></h2>
+
+    
+      <div id="progress-bar-wrapper">
+        <div id="progress-bar"></div>
+      </div>
+
+      <p id="score-message"></p>
+      <button class="button" id="restart-quiz">Retake Quiz</button>
+    </div>
+  </main>
+    <script src="eng quiz.js"></script>
+</body>
+</html>
