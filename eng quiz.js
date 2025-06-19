@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Handle option selection
+  
   document.querySelectorAll('.question ul li').forEach(option => {
     option.addEventListener('click', function () {
       const siblings = this.parentElement.querySelectorAll('li');
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Show all sets for review
+    
     questionSets.forEach(set => {
       set.style.display = 'block';
       set.classList.add('active');
