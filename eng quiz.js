@@ -55,23 +55,24 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     let score = 0;
 
-    const correctAnswers = {
-      q1: "Plentiful",
-      q2: "Receive",
-      q3: "Mean",
-      q4: "for",
-      q5: "She doesn't like chocolate.",
-      q6: "I had finished my homework before the game.",
-      q7: "Timid",
-      q8: "I saw him yesterday.",
-      q9: "Barked",
-      q10: "Enthusiastic",
-      q11: "Quickly",
-      q12: "on",
-      q13: "And",
-      q14: "She walks to school every day.",
-      q15: "Children"
-    };
+   const correctAnswers = {
+  q1: "Unwilling",
+  q2: "Neither of them is ready.",
+  q3: "Adverb",
+  q4: "Begun",
+  q5: "She said, 'I am tired.'",
+  q6: "The project was completed by her.",
+  q7: "Accommodate",
+  q8: "Run",
+  q9: "Have should be has",
+  q10: "Better",
+  q11: "If it rains, we will cancel the picnic.",
+  q12: "To make people comfortable in a new situation",
+  q13: "a",
+  q14: "He said he was busy.",
+  q15: "Conjunction"
+};
+
 
     document.querySelectorAll('.question').forEach(question => {
       const qid = question.dataset.questionId;
