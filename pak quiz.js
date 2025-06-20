@@ -55,22 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     let score = 0;
     const correctAnswers = {
-      q1: "Iskander Mirza",
-      q2: "14 August 1947",
-      q3: "Islamabad",
-      q4: "Quaid-e-Azam",
-      q5: "Urdu",
-      q6: "Hafeez Jullundhri",
-      q7: "1956",
-      q8: "K2",
-      q9: "1998",
-      q10: "Benazir Bhutto",
-      q11: "Indus",
-      q12: "Rupee",
-      q13: "Hockey",
-      q14: "Karachi",
-      q15: "Mian Ferozuddin"
-    };
+  q1: "Ayub Khan", 
+  q2: "To have a separate nation for Muslims", 
+  q3: "Karachi", 
+  q4: "Speech on Religious Freedom",
+  q5: "Arabic-Persian script", 
+  q6: "It’s written mostly in Persian words", 
+  q7: "1973", 
+  q8: "Skardu", 
+  q9: "Dr. Abdul Qadeer Khan", 
+  q10: "Benazir Bhutto", 
+  q11: "It supports the agriculture of the entire country",
+  q12: "A crescent and a star", 
+  q13: "Hockey", 
+  q14: "Larkana", 
+  q15: "People of Pakistan" 
+};
+
 
     document.querySelectorAll('.question').forEach(question => {
       const qid = question.dataset.questionId;
