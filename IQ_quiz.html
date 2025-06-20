@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>IQ Quiz</title>
-    <link rel="stylesheet" href="IQ_quiz.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IQ Quiz</title>
+  <link rel="stylesheet" href="IQ_quiz.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-
 
 <body>
-    <header>
-        <a href="index.html" class="home-button">Home</a> 
-        <h1>IQ</h1>
-        <img src="iq.jpg" alt="IQ Image" class="iq" />
-    </header>
+  <header>
+    <a href="index.html" class="home-button">Home</a> 
+    <h1>IQ Quiz</h1>
+    <img src="iq.jpg" alt="IQ Image" class="iq" />
+  </header>
 
-    <main>
-        <form id="quizForm">
-           <div class="question-set" id="set1">
-  <div class="question" data-question-id="q1">
-    <p>1. What comes next: 1, 4, 9, 16, 25, ___?</p>
-    <ul>
-      <li data-option="36">36</li>
-      <li data-option="30">30</li>
-      <li data-option="49">49</li>
-    </ul>
-  </div>
+  <main>
+    <form id="quizForm">
+      <div class="question-set" id="set1">
+        <div class="question" data-question-id="q1">
+          <p>1. What comes next: 1, 4, 9, 16, 25, ___?</p>
+          <ul>
+            <li data-option="36">36</li>
+            <li data-option="30">30</li>
+            <li data-option="49">49</li>
+          </ul>
+        </div>
         <div class="question" data-question-id="q2">
           <p>2. 5 machines make 5 widgets in 5 minutes. How long for 100 machines to make 100 widgets?</p>
           <ul>
@@ -45,16 +44,16 @@
         </div>
       </div>
 
+    
       <div class="question-set" id="set2">
-         <div class="question" data-question-id="q4">
-    <p>4. Two mothers and two daughters go to a restaurant. They order only 3 meals. How?</p>
-    <ul>
-      <li data-option="3 people total">3 people total</li>
-      <li data-option="They shared food">They shared food</li>
-      <li data-option="One was not hungry">One was not hungry</li>
-    </ul>
-  </div>
-</div>
+        <div class="question" data-question-id="q4">
+          <p>4. Two mothers and two daughters go to a restaurant. They order only 3 meals. How?</p>
+          <ul>
+            <li data-option="3 people total">3 people total</li>
+            <li data-option="They shared food">They shared food</li>
+            <li data-option="One was not hungry">One was not hungry</li>
+          </ul>
+        </div>
         <div class="question" data-question-id="q5">
           <p>5. Man 4x age of daughter. In 20 years, he’ll be twice her age. Ages now?</p>
           <ul>
@@ -73,15 +72,16 @@
         </div>
       </div>
 
+
       <div class="question-set" id="set3">
-        <div class="question" data-question-id="q9">
-    <p>9. Which is heavier: 1kg of cotton or 1kg of iron?</p>
-    <ul>
-      <li data-option="Same">Same</li>
-      <li data-option="Cotton">Cotton</li>
-      <li data-option="Iron">Iron</li>
-    </ul>
-  </div>
+        <div class="question" data-question-id="q7">
+          <p>7. Which is heavier: 1kg of cotton or 1kg of iron?</p>
+          <ul>
+            <li data-option="Same">Same</li>
+            <li data-option="Cotton">Cotton</li>
+            <li data-option="Iron">Iron</li>
+          </ul>
+        </div>
         <div class="question" data-question-id="q8">
           <p>8. Plane crashes on US-Canada border. Where bury survivors?</p>
           <ul>
@@ -109,73 +109,70 @@
             <li data-option="0.5">0.5</li>
           </ul>
         </div>
-          
         <div class="question" data-question-id="q11">
-    <p>11. Which number comes next: 121, 144, 169, ___?</p>
-    <ul>
-      <li data-option="190">190</li>
-      <li data-option="196">196</li>
-      <li data-option="200">200</li>
-        </ul>
-      </div>
-    </div>
-
+          <p>11. Which number comes next: 121, 144, 169, ___?</p>
+          <ul>
+            <li data-option="190">190</li>
+            <li data-option="196">196</li>
+            <li data-option="200">200</li>
+          </ul>
+        </div>
         <div class="question" data-question-id="q12">
-    <p>12. What has to be broken before you can use it?</p>
-    <ul>
-      <li data-option="Egg">Egg</li>
-      <li data-option="Glass">Glass</li>
-      <li data-option="Clock">Clock</li>
-    </ul>
-  </div>
-</div>
+          <p>12. What has to be broken before you can use it?</p>
+          <ul>
+            <li data-option="Egg">Egg</li>
+            <li data-option="Glass">Glass</li>
+            <li data-option="Clock">Clock</li>
+          </ul>
+        </div>
+      </div>
 
+      
       <div class="question-set" id="set5">
         <div class="question" data-question-id="q13">
-    <p>13. What 5-letter word becomes shorter when you add two letters to it?</p>
-    <ul>
-      <li data-option="Short">Short</li>
-      <li data-option="Small">Small</li>
-      <li data-option="Brief">Brief</li>
-    </ul>
-  </div>
-</div>
+          <p>13. What 5-letter word becomes shorter when you add two letters to it?</p>
+          <ul>
+            <li data-option="Short">Short</li>
+            <li data-option="Small">Small</li>
+            <li data-option="Brief">Brief</li>
+          </ul>
+        </div>
         <div class="question" data-question-id="q14">
-    <p>14. You see a boat filled with people. It hasn’t sunk, but when you look again, you don’t see a single person on board. Why?</p>
-    <ul>
-      <li data-option="They hid">They hid</li>
-      <li data-option="All were married">All were married</li>
-      <li data-option="They jumped">They jumped</li>
-    </ul>
-     </div>
+          <p>14. You see a boat filled with people. It hasn’t sunk, but when you look again, you don’t see a single person on board. Why?</p>
+          <ul>
+            <li data-option="They hid">They hid</li>
+            <li data-option="All were married">All were married</li>
+            <li data-option="They jumped">They jumped</li>
+          </ul>
+        </div>
         <div class="question" data-question-id="q15">
-    <p>15. What comes once in a minute, twice in a moment, but never in a thousand years?</p>
-    <ul>
-      <li data-option="Letter M">Letter M</li>
-      <li data-option="Time">Time</li>
-      <li data-option="Chance">Chance</li>
-    </ul>
-  </div>
+          <p>15. What comes once in a minute, twice in a moment, but never in a thousand years?</p>
+          <ul>
+            <li data-option="Letter M">Letter M</li>
+            <li data-option="Time">Time</li>
+            <li data-option="Chance">Chance</li>
+          </ul>
+        </div>
+      </div>
 
-            <div class="navigation">
-                <button type="button" id="prevBtn">Previous</button>
-                <button type="button" id="nextBtn">Next</button>
-                <button type="submit" id="submitBtn" style="display: none;">Submit</button>
-            </div>
-        </form>
+      
+      <div class="navigation">
+        <button type="button" id="prevBtn">Previous</button>
+        <button type="button" id="nextBtn">Next</button>
+        <button type="submit" id="submitBtn" style="display: none;">Submit</button>
+      </div>
+    </form>
 
-        <div id="score-container" style="display: none;">
+    <div id="score-container" style="display: none;">
       <h2>Your Total Score: <span id="final-score">0</span> / <span id="total-questions-display">15</span></h2>
-
-    
       <div id="progress-bar-wrapper">
         <div id="progress-bar"></div>
       </div>
-
       <p id="score-message"></p>
       <button class="button" id="restart-quiz">Retake Quiz</button>
     </div>
   </main>
-    <script src="IQ quiz.js"></script>
+
+  <script src="IQ quiz.js"></script>
 </body>
 </html>
