@@ -54,24 +54,22 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     let score = 0;
-
-    const correctAnswers = {
-      q1: "35",
-      q2: "5 minutes",
-      q3: "Sarah",
-      q4: "42",
-      q5: "40 and 10",
-      q6: "J, J",
-      q7: "30",
-      q8: "Nowhere",
-      q9: "55%",
-      q10: "1",
-      q11: "720 degrees",
-      q12: "12",
-      q13: "37.5 degrees",
-      q14: "14",
-      q15: "20 days"
-    };
+const correctAnswers = {
+  q1: "36",
+  q2: "5 minutes",
+  q3: "Sarah",
+  q4: "3 people total",
+  q5: "40 and 10",
+  q6: "J, J",
+  q8: "Nowhere",
+  q9: "55%",
+  q10: "1",
+  q11: "196",
+  q12: "Egg",
+  q13: "Short",
+  q14: "All were married",
+  q15: "Letter M"
+};
 
     document.querySelectorAll('.question').forEach(question => {
       const qid = question.dataset.questionId;
